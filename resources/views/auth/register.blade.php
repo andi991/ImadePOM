@@ -1,4 +1,4 @@
 @extends('adminlte::auth.register')
 
-@section('title', 'Register ImadePOM')
+@section('title', 'Register | ImadePOM')
 

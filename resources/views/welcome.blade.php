@@ -123,7 +123,7 @@
       </div>
       <div class="footer-copyright text-center py-3 font-small">
         <div class="container-fluid">
-          <div>&copy; <a href="undefined/">This Project is Under Building</a> - Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+          <div>&copy; <a href="undefined/">This Project is Under Building</a></div>
         </div>
       </div>
     </footer>

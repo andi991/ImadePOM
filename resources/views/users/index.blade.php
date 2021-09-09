@@ -14,25 +14,25 @@
                     <table class="table table-hover table-bordered table-stripped" id="example2">
                         <thead>
                         <tr>
-                            <th class="align-center">No.</th>
+                            <th class="text-center">No.</th>
                             <th>Nama</th>
                             <th>Email</th>
                             <th>Hak Akses</th>
-                            <th>Opsi</th>
+                            <th class="text-center">Opsi</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($users as $key => $user)
                             <tr>
-                                <td class="align-center">{{$key+1}}</td>
+                                <td class="text-center">{{$key+1}}</td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->role}}</td>
                                 <td>
-                                    <a href="{{route('users.edit', $user)}}" class="btn btn-primary btn-xs">
+                                    <a href="{{route('users.edit', $user)}}" class="btn btn-primary btn-sm">
                                         Edit
                                     </a>
-                                    <a href="{{route('users.destroy', $user)}}" onclick="notificationBeforeDelete(event, this)" class="btn btn-danger btn-xs">
+                                    <a href="{{route('users.destroy', $user)}}" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="btn btn-danger btn-sm">
                                         Delete
                                     </a>
                                 </td>

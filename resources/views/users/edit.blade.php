@@ -23,7 +23,10 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail">Hak Akses</label>
-                        <input type="text" class="form-control @error('role') is-invalid @enderror" id="exampleInputRole" placeholder="Hak Akses User" name="role" value="{{$user->role ?? old('role')}}">
+                        <select type="enum" class="custom-select  @error('role') is-invalid @enderror" id="exampleSelectBorder" placeholder="Hak Akses User" name="role" value="{{$user->role ?? old('role')}}">
+                            <option>admin</option>
+                            <option>user</option>
+                        </select>
                         @error('role') <span class="text-danger">{{$message}}</span> @enderror
                     </div>
                     <div class="form-group">

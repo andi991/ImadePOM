@@ -142,15 +142,16 @@
     <!-- /.content -->
   </div>
 
-
-@stop
-
-@section('footer')
-<div class="float-right d-none d-sm-block">
+  @section('footer')
+    <div class="float-right d-none d-sm-block">
       <b>Version</b> 1.0.0 Alpha
     </div>
     <strong>Copyright &copy; 2021 ImadePOM</strong> All rights reserved.
+
+    @stop
 @stop
+
+
 
 @section('css')
   <link rel="stylesheet" href="/css/admin_custom.css">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\pemeriksaanController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -23,9 +24,9 @@ Route::get('/aragon', function () {
     return view('dashboard');
 });
 
-Route::get('/pemeriksaan', function()
-    {return view('pemeriksaan');
-});
+//Route::get('/pemeriksaan', function()
+//    {return view('pemeriksaan');
+//});
 
 Route::get('/penindakan', function()
     {return view('penindakan');
@@ -80,6 +81,8 @@ Route::group(['middleware' => 'auth','ceklevel:admin,user'], function () {
     //Route::get('logout', [AuthController::class, 'logout'])->name('logout');
  
 });
+
+Route::resource('pemeriksaan', pemeriksaanController::class);
 
 
 
