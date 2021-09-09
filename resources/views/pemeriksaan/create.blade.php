@@ -97,7 +97,7 @@
                 <div class="card-footer">
                     <div class="text-right">
                         <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="{{ route('posts.index') }}" class="btn btn-default">Batal</a>
+                        <a href="{{ route('pemeriksaan.index') }}" class="btn btn-default">Batal</a>
                     </div>
                 </div>
             </div>

@@ -82,7 +82,7 @@
               <div class="card-body">
                 <!--logika berhasil -->
                     @if ($message = Session::get('success'))
-                      <div class="alert alert-success">
+                      <div class="alert alert-success" class="text-auto">
                         <p>{{ $message }}</p>
                       </div>
                     @endif

@@ -80,6 +80,8 @@ class pemeriksaanController extends Controller
         ]);
 
         ///mengubah data berdasarkan request dan parameter yang dikirimkan
+        $pemeriksaan->update($request->all());
+
         return redirect()->route('pemeriksaan.index')
             ->with('success','Data updated successfully');
 

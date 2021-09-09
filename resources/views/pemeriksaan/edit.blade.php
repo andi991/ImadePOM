@@ -29,15 +29,15 @@
     @endif
     
     <form action="{{ route('pemeriksaan.update' ,$pemeriksaan->id) }}" method="POST">
-    @csrf
     @method('PUT')
+    @csrf
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
                         <label for="exampleInputName">Nama</label>
-                        <input type="text" name="nama" value="{{ $pemeriksaan->nama }}" class="form-control" placeholder="Nama">
+                        <input type="text" name="nama" class="form-control" placeholder="Nama" value="{{$pemeriksaan->nama ?? old('nama')}}">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputNumber">No Surat</label>
