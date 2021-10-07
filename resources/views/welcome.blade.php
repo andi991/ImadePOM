@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IMADE POM</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <title>Welcome | ImadePOM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.1.0" rel="stylesheet">
@@ -18,7 +19,7 @@
           <button class="navbar-toggler" type="button" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
            <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
-            </ul><a class="btn btn-primary btn-rounded my-0" href="laporan" target="_blank">Laporan</a>
+            </ul><a class="btn btn-primary btn-rounded my-0" href="/laporan-home">Laporan</a>
           </div>
         </div>
       </nav>
@@ -27,10 +28,11 @@
         <div class="site-bg-img d-flex align-items-center">
           <div class="container">
             <div class="row no-gutters">
-              <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+              <div class="col-md-10 col-lg-12 text-center text-md-left margins">
                 <div class="white-text">
                   <div class="wow fadeInLeft" data-wow-delay="0.3s">
-                    <h1 class="h1-responsive font-weight-bold mt-sm-5">Selamat Datang di Sistem Informasi IMADE POM</h1>
+                    <h1 class="h1-responsive font-weight-bold mt-sm-5">Selamat Datang di ImadePOM</h1>
+                    <div class="h5 font-weight-light">Informasi Master Data dan Evaluasi Pengawas Obat dan Makanan </div>
                     <div class="h6">
                       First Time Login? Contact Administrator to add your User
                     </div>
@@ -59,42 +61,7 @@
       <div class="card mb-5 wow fadeInUp" data-wow-delay=".4s">
         <div class="card-body p-5">
           <div class="row">
-            <div class="col-md-8">
-              <form action="https://formspree.io/youremail@example.com" method="POST">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="md-form">
-                      <input class="form-control" id="name" type="text" name="name" required="required"/>
-                      <label for="name">Your name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="md-form">
-                      <input class="form-control" id="email" type="text" name="_replyto" required="required"/>
-                      <label for="email">Your email</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form">
-                      <input class="form-control" id="subject" type="text" name="subject" required="required"/>
-                      <label for="subject">Subject</label>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="md-form">
-                      <textarea class="md-textarea" id="message" name="message" required="required"></textarea>
-                      <label for="message">Your message</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="center-on-small-only mb-4">
-                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Send</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-4">
+            <div class="col">
               <ul class="list-unstyled text-center">
                 <li class="mt-4"><i class="fa fa-map-marker indigo-text fa-2x"></i>
                   <p class="mt-2">Jl. Gn. Agung No.8, Banjar Tegal, Kec. Buleleng, Kabupaten Buleleng, Bali 81117</p>

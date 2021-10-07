@@ -1,6 +1,11 @@
 <nav class="main-header navbar
     {{ config('adminlte.classes_topnav_nav', 'navbar-expand') }}
+    @if (auth()->user()->role == "admin")
+    {{ config('adminlte.classes_topnav2', 'navbar-black navbar-dark') }}">
+    @endif
+    @if (auth()->user()->role == "user")
     {{ config('adminlte.classes_topnav', 'navbar-white navbar-light') }}">
+    @endif
 
     {{-- Navbar left links --}}
     <ul class="navbar-nav">

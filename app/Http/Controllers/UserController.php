@@ -16,8 +16,12 @@ class UserController extends Controller
     public function index()
     {
     $users = User::all();
+    $admin = User::where('role', 'admin')->count();
+    $user = User::where('role', 'user')->count();
     return view('users.index', [
-        'users' => $users
+        'users' => $users,
+        'admin' => $admin,
+        'user' => $user
     ]);
     }
 
@@ -113,7 +117,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($request, $id)
     {
         $user = User::find($id);
         if ($id == $request->user()->id) return redirect()->route('users.index')

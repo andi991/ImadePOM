@@ -39,13 +39,21 @@
                         <input type="password" class="form-control" id="exampleInputPassword" placeholder="Konfirmasi Password" name="password_confirmation">
                     </div>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer" class="text-right">
+                    <div class="text-right">
                     <button type="submit" class="btn btn-primary">Simpan</button>
                     <a href="{{route('users.index')}}" class="btn btn-default">
                         Batal
                     </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    @section('footer')
+        <div class="float-right d-none d-sm-block">
+          <b>Version</b> 1.0.0 Alpha
+        </div>
+        <strong>Copyright &copy; 2021 ImadePOM</strong> All rights reserved.
+        @stop
 @stop
